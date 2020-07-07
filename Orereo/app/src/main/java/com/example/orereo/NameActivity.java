@@ -1,5 +1,6 @@
 package com.example.orereo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
@@ -54,7 +55,9 @@ public class NameActivity extends AppCompatActivity {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(NameActivity.this, getAllTexts(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(NameActivity.this, CombinationsActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

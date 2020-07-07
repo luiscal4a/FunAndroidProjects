@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CombinationsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="180dp"
+        android:id="@+id/cajaScroll"
+        android:layout_marginTop="80dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:padding="15dp"
+        >
+        <LinearLayout
+            android:id="@+id/ll_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginRight="70dp"
+                    android:hint="Tercer trozo de palabra"/>
+                <ImageButton
+                    android:layout_alignParentRight="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_remove_circle_black_24dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:background="?android:selectableItemBackground"/>
+            </RelativeLayout>
+-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:background = "@drawable/roundedbutton"
+        android:id="@+id/btn_new"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="100dp"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:text="Siguiente" />
+
+</RelativeLayout>
